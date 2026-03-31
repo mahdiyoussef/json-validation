@@ -25,8 +25,7 @@ Simply clone this repository or drop `joi.py` and `joiobject.py` into your Pytho
 Use `joiobject` to chain properties and build the rule definitions.
 
 ```python
-from joiobject import joiobject
-from joi import joi
+from pyjoi import joi, joiobject
 
 # Define field rules using chainable methods
 username_schema = joiobject().string().required().minlength(3).maxlength(20).get()
